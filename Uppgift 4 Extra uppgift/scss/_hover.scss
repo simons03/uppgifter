@@ -1,0 +1,41 @@
+button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+#reviews-arrows {
+    img:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+    }
+}
+
+#facebook:hover {
+    background-color: #203970 !important;
+    cursor: pointer;
+}
+#twitter:hover {
+    background-color: #4282b3 !important;
+    cursor: pointer;
+}
+#instagram:hover {
+    background-color: #99204c !important;
+    cursor: pointer;
+}
+#youtube:hover {
+    background-color: #9c1717 !important;
+    cursor: pointer;
+}
+#pintrest:hover {
+    background-color: #770512 !important;
+    cursor: pointer;
+}
+
+#play-button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    border-radius: 50%;
+}

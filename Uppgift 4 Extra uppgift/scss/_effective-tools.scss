@@ -1,0 +1,114 @@
+#effective-tools {
+    height: 160vh;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+
+
+    .effective-tools-text {
+        max-width: 30rem;
+        text-align: center;
+    }
+    #effective-tools h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        max-width: 25rem;
+    }
+    .effective-tools-text p {
+        color: #57647C;
+    }
+    .effective-tools-text button {
+        padding: 0.6rem 1.8rem;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        border: 1px solid transparent;
+    }
+    .grid {
+        max-width: 40rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+    .grid .box {
+        height: 12rem;
+        width: 15rem;
+    }
+    .grid h5 {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    .grid p {
+        color: #57647C;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    #effective-tools {
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    
+    
+        .effective-tools-text {
+            max-width: 30rem;
+            text-align: center;
+        }
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            // max-width: 25rem;
+        }
+
+        
+        .effective-tools-text button {
+            padding: 1rem 8rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            border: 1px solid transparent;
+        }
+        .grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    #effective-tools {
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: row;
+    
+    
+        .effective-tools-text {
+            max-width: 30rem;
+            text-align: left;
+
+            h2 {
+                font-size: 3.5rem;
+                font-weight: 600;
+                max-width: 25rem;
+            }
+            p {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+    
+        }
+
+        
+        .effective-tools-text button {
+            padding: 1rem 4rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            border: 1px solid transparent;
+        }
+        .grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+}

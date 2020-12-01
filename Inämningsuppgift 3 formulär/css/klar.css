@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container  {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(211, 211, 211, 0.712);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    
+}
+h1 {
+    font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url(../images/bg-tablet.jpg);
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-image: url(../images/bg-desktop.jpg);
+    }
+    
+}

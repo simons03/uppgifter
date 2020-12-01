@@ -1,0 +1,706 @@
+@import "../standard.css";
+
+
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto slab', serif; */
+
+
+
+/* General style */
+
+
+html, body {
+    font-family: 'Roboto', sans-serif
+}
+a, h1, h2, h3  {
+    font-family: 'Roboto slab', serif;
+}
+.justify-content {
+    justify-content: space-between;
+}
+.flex-directions {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.align-items {
+    align-items: center;
+}
+.padding {
+    padding: 10px;
+}
+.background-lightgray {
+    background: lightgray;
+}
+
+
+/* slut General style */
+
+
+
+
+
+
+/* top-menu */
+.top-menu {
+    width: 100%;
+    height: 40px;
+    font-size: 0.7rem;
+    border-bottom: 1px solid #707070;
+}
+
+.top-menu .box {
+    line-height: 40px;
+}
+
+.top-menu a {
+    color: #2BAAEC;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-left: 6px;
+}
+.top-menu #child1 > i {
+    color: #2BAAEC;
+}
+#text-topmenu-child1 {
+    color: #333333 !important;
+}
+
+/* top-menu */
+
+
+
+
+
+
+
+
+
+
+
+/* main menu */
+
+.main-menu {
+    margin-top: 3rem;
+}
+
+.main-menu img {
+    height: 4rem;
+}
+
+.main-menu i {
+    font-size: 40px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+.main-menu #main-menu-child2 {
+    background-color: lightgray;
+}
+
+.main-menu .menu {
+    display: none;
+    margin-top: 1px;
+    padding: 10px;
+    text-align: center;
+}
+.main-menu .menu-desktop {
+    display: none;
+}
+.main-menu #main-menu-child3 a {
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+}
+.main-menu #main-menu-child3 a:hover {
+    background-color: lightgray;
+}
+input#knapp:checked ~ div.menu {
+	display: inline;   
+}
+.main-menu #knapp {
+     display: none;
+   }
+
+   .main-menu .border-top {
+    border-top:1px solid #707070;
+}
+
+/* style knappen */
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+/* slut style knappen */
+
+/* slut main menu */
+
+
+
+
+
+
+/* showcase */
+
+.showcase {
+    margin-top: 20px;
+    background: #dedede;
+}
+.showcase img {
+    height: 300px;
+    display: none;
+}
+.showcase #showcase-child2 div {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.showcase #showcase-child2 div button {
+    height: 40px;
+    width: 140px;
+    background-color: #25E6C8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* slut showcase */
+
+
+
+
+
+
+
+
+
+
+/* abaut us */
+
+.abaut-us {
+    margin-top: 10px;
+}
+
+.abaut-us h2 {
+    margin-bottom: 10px;
+}
+#color-blue {
+    color: #2BAAEC; 
+    font-weight: 600;
+}
+.abaut-us #abaut-us-child1 .hr {
+    margin-bottom: 50px;
+    border: 2px solid #25E6C8;
+}
+
+.abaut-us #abaut-us-child1 p {
+    margin-bottom: 10px;
+}
+
+.abaut-us #abaut-us-child1 div {
+    margin-top: 30px;
+    font-size: 30px; 
+    color: #2BAAEC;
+    font-weight: 500;
+}
+
+.abaut-us .block-text {
+    color: black;
+    font-size: 9px;
+}
+
+.abaut-us #abaut-us-child2 {
+    display: none;
+}
+/* slut abaut us */
+
+
+
+
+
+
+
+/* services */
+.services {
+    background-color: #F7F7F7 ;
+}
+.services .rubrik {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+}
+.services h3 {
+    border-bottom: 3px solid #25E6C8;
+    margin-bottom: 100px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+.services .boxar .box {
+    width: 100%;
+    height: 360px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+}
+/* centerar tand loggan i cirkeln */
+.services .box {
+    text-align: center;
+    padding-top: 45px;
+}
+/* slut centerar tand liggan i cirkeln */
+.services .box .ikon {
+    width: 120px;
+    height: 120px;
+    background-color: #25E6C8;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+.services .box img {
+    margin-top: 25px;
+}
+.services .box h2 {
+    margin-top: 20px;
+}
+.services .box p {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+/* Hover and style services */
+
+#services-parent1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        transition: 1s;
+    cursor: pointer;
+}
+#services-parent2:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        transition: 1s;
+    cursor: pointer;
+}
+#services-parent3:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        transition: 1s;
+    cursor: pointer;
+}
+#services-parent4:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        transition: 1s;
+    cursor: pointer;
+}
+#services-parent5:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        transition: 1s;
+    cursor: pointer;
+}
+#services-parent6:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        transition: 1s;
+    cursor: pointer;
+}
+#services-parent1 {
+    transition: 1s;
+}
+#services-parent2 {
+    transition: 1s;
+}
+#services-parent3 {
+    transition: 1s;
+}
+#services-parent4 {
+    transition: 1s;
+}
+#services-parent5 {
+    transition: 1s;
+}
+#services-parent6 {
+    transition: 1s;
+}
+.services .box:hover > .services .ring {
+    background-color: #2BAAEC;
+    box-shadow: 0px 0px 0px 12px rgba(43, 168, 236, 0.279);
+    transition: 1s;
+
+}
+  #services-parent1:hover #services-child1 {
+    background-color: #2BAAEC;
+    box-shadow: 0px 0px 0px 12px rgba(43, 168, 236, 0.279);
+    transition: 1s;
+}
+#services-parent2:hover #services-child2 {
+    background-color: #2BAAEC;
+    box-shadow: 0px 0px 0px 12px rgba(43, 168, 236, 0.279);
+    transition: 1s;
+}
+#services-parent3:hover #services-child3 {
+    background-color: #2BAAEC;
+    box-shadow: 0px 0px 0px 12px rgba(43, 168, 236, 0.279);
+    transition: 1s;
+}
+#services-parent4:hover #services-child4 {
+    background-color: #2BAAEC;
+    box-shadow: 0px 0px 0px 12px rgba(43, 168, 236, 0.279);
+    transition: 1s;
+}
+#services-parent5:hover #services-child5 {
+    background-color: #2BAAEC;
+    box-shadow: 0px 0px 0px 12px rgba(43, 168, 236, 0.279);
+    transition: 1s;
+}
+#services-parent6:hover #services-child6 {
+    background-color: #2BAAEC;
+    box-shadow: 0px 0px 0px 12px rgba(43, 168, 236, 0.279);
+    transition: 1s;
+} 
+
+.services .ikon {
+    transition: 1s;
+}
+/* Slut Hover and style services */
+/* slut services */
+
+
+
+
+
+
+
+
+
+
+
+/* Apointment */
+.apointment {
+    width: 100%;
+    height: 80px;
+    background-color:#2BAAEC ;
+}
+.apointment h2 {
+    font-size: 15px;
+    color: white;
+}
+.apointment button {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: 0px;
+    color: #2BAAEC;
+    background: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+.apointment #parent {
+    height: 80px;
+}
+
+/* Slut Apointment */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 31px;
+    background-color: #1f9fe4;
+}
+footer p {
+    color: white;
+    text-align: center;
+    line-height: 31px;
+}
+/* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 576px) {
+/* Top menu */
+    .container {
+        width: 75%;
+    }
+
+    .top-menu {
+        width: 100%;
+        height: 60px;
+        font-size: 1rem;
+    }
+    .top-menu .box a {
+        margin-right: 10px;
+        color: #2BAAEC;
+        font-size: 1rem;
+    }    
+    .top-menu #child1, .top-menu #child2 {
+        line-height: 60px;
+    }
+
+
+    .top-menu #child2 a:hover{
+        color: #25E6C8;
+        cursor: pointer;
+    }
+    
+    /* slut Top menu */
+
+
+
+    
+
+
+
+
+
+
+
+    /* Main menu */
+
+    .main-menu img {
+        height: 80px;
+    }
+    .main-menu .menu-knapp {
+        display: none;
+    }
+    .main-menu .menu {
+        display: flex;
+    }
+    .main-menu .border-top {
+        border-top: 0px solid #707070;
+    }
+    .main-menu .border-bottom {
+        border: 0px solid #707070;
+    }
+    .main-menu #main-menu-child3 a {
+        width: 100%;
+        display: inline;
+        padding: 10px;
+    }
+    .main-menu .menu-desktop {
+        display: flex;
+    }
+    
+    .main-menu .menu-desktop a {
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    .main-menu .menu-desktop a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #2baaec;
+    }
+    .main-menu #main-menu-child3 {
+        display: none;
+    }
+    /* Slut Main menu */
+
+
+
+
+
+
+
+
+
+    /* showcase  */
+    .showcase {
+        padding-top: 20px;
+    }
+    .showcase img {
+        display: flex;
+    }
+    .showcase #parent {
+        margin-top: 20px;
+    }
+    .showcase .bild1 {
+        height: 680px;
+        width: 616px;
+    } 
+    .showcase #showcase-child2 div {
+        max-width: 600px;
+        padding-right: 50px;
+        text-align: left;
+    }
+    .showcase #showcase-child2 div h1 {
+       font-size: 50px;
+       margin-bottom: 20px;
+    }
+    .showcase #showcase-child2 div p {
+        font-size: 18px;
+        margin-bottom: 20px;
+     }
+     .showcase #showcase-child2 div button {
+        height: 60px;
+        width: 240px;
+        background-color: #25E6C8;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+    }
+    .showcase #showcase-child2 div button:hover {
+        background: #2BAAEC;
+        cursor: pointer;
+    }
+    /* Slut showcase  */
+
+
+
+
+
+
+
+
+
+
+
+
+    /* About us */
+    .abaut-us {
+        margin-top: 90px;
+    }
+    .abaut-us #abaut-us-child1 {
+        max-width: 800px;
+        margin-top: 60px;
+    }
+    .abaut-us #abaut-us-child1 h2 {
+        font-size: 40px;
+        max-width: 500px;
+        margin-bottom: 10px;
+    }
+    .abaut-us #abaut-us-child1 p {
+        font-size: 18px;
+    }
+    .abaut-us #abaut-us-child1 div {
+        margin-top: 30px;
+        font-size: 40px;
+        color: #2BAAEC;
+    }
+    .abaut-us .block {
+        max-width: 600px;
+    }
+    .bild2{
+        height: 724px;
+        width: 473px;
+    }
+    .abaut-us #abaut-us-child2 {
+        display: flex;
+    }
+    /* Slut About us */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* services */
+    .services .rubrik {
+        text-align: center;
+        padding-top: 150px;
+        font-size: 30px;
+    }
+    .services .rubrik h3 {
+        border-bottom: 3px solid #25E6C8;
+        margin-bottom: 100px;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+    }
+    .services .boxar .box {
+        width: 450px;
+        height: 360px;
+    }
+    /* Slut services */
+
+
+
+
+
+
+
+
+
+    /* apointment */
+    .apointment {
+        height: 220px;
+    }
+
+    .apointment h2 {
+        font-size: 30px;
+    }
+    
+    .apointment button {
+        width: 285px;
+        height: 60px;
+        border-radius: 20px;
+        border: 0px;
+        color: #2BAAEC;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .apointment #parent {
+        height: 220px;
+    }
+
+    .apointment button:hover {
+        border: 1px solid white;
+        background-color: #2BAAEC;
+        color: white;
+        cursor: pointer;
+    }
+    
+
+    /* Slut apointment */
+}
+

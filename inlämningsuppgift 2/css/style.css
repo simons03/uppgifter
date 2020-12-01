@@ -1,0 +1,1473 @@
+@import "../standard.css";
+/* main */
+.justify-content {
+    justify-content: center;
+}
+
+/*close main */
+
+
+
+/* overlay background */
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.dark-overlay.toggled {
+    opacity: 0.5;
+    visibility: visible;
+}
+/* close overlay background */
+
+/* knapp back to top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #3e9eff52;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;   
+    font-weight: 600;
+  }
+  
+  #myBtn:hover {
+    background-color: #ffbb007e;
+  }
+/* slut knapp back to top */
+
+
+/*Side navigation*/
+
+.nav-toggle {
+    font-size: 40px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #364f6b;
+}
+
+.side-nav {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    height: 100vh;
+    background-color: #ffF;
+    border-left: 1px solid #ccc;
+    padding: 15px;
+    transition: all 0.3s cubic-bezier(0, 0.57, 0.74, 1.06);
+    -webkit-transition: all 0.3s cubic-bezier(0, 0.57, 0.74, 1.06);
+    -moz-transition: all 0.3s cubic-bezier(0, 0.57, 0.74, 1.06);
+    -o-transition: all 0.3s cubic-bezier(0, 0.57, 0.74, 1.06);
+    z-index: 110;
+    background-color: #2D95FE;
+
+}
+.side-nav i {
+    color: #ffffff;
+}
+.side-nav a {
+    color: #ffffff;
+}
+.side-nav.toggled {
+    right: 0;
+}
+
+.nav-close {
+    font-size: 38px;
+    cursor: pointer;
+    float: right;
+    margin-right: 15px;
+    color: #364f6b;
+}
+
+ul {
+    list-style: none;
+    padding-top: 30px;
+    margin-left: -40px;
+}
+ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    color: black;
+    margin: 0 1rem;
+}
+ul li a:hover {
+    color: #FFBB00;
+    text-decoration: none !important;
+}
+.side-nav-active {
+    color: #FFBB00 !important;
+    font-weight: 600;
+    content: "";
+    display: block;
+    width: 70%;
+    border-bottom: 4px solid #FFBB00; 
+}
+.side-nav-button {
+    background-color: #FFBB00;
+    border-radius: 0.6rem;
+    border: 1px solid transparent;
+}
+/*Side navigation*/
+
+
+#mobile-menu #side-menu-knapp { 
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* menu desktop */
+#menu-desktop ul {
+    flex-direction: row;
+    gap: 2rem;
+}
+#menu-desktop .side-nav-button {
+    padding: 1px 30px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* menu desktop */
+
+
+
+
+
+#mobile-menu {
+    height: 3.5rem;
+}
+#menu-desktop {
+    display: none;
+}
+.logga-menu {
+    height: 3.5rem;
+    z-index: 5;
+}
+.logga-menu i {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header */
+
+header {
+    margin-top: -3.5rem;
+    height: 100vh;
+    background-image: url(../images/bg_blue_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700 !important;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif !important;
+
+}
+header .text {
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif !important;
+    
+}
+header .text p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0.5rem;
+} 
+.Download-Now:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header .text button {
+    background-color: transparent;
+    padding: 0.6rem 2rem;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 0.6rem;
+}
+header .text img {
+    margin-left: 1rem;
+}
+header .img-text {
+    padding-top: 0.6rem;
+    padding-left: 0.2rem;
+}
+
+
+.karusell {
+    display: none;
+}
+
+/* close header */
+
+
+
+
+
+
+
+
+
+
+
+/* section ecutbildning */
+    #ecutbildning {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 8rem;
+    }
+    .ecutbildning {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    #ecutbildning  img{
+        height: 0.5rem;
+    }
+    /* ec animation */
+    .ecanimation {
+        position: relative;
+        animation-name: ecshrinkgandgrow;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    #ec1{animation-delay: 0s;}
+    #ec2{animation-delay: 0.24s;}
+    #ec3{animation-delay: 0.5s;}
+    #ec4{animation-delay: 0.75s;}
+
+    @keyframes ecshrinkgandgrow {
+        0% {
+            height: 0.5rem;
+        }
+        50% {   
+            height: 0.8rem;
+        }
+        75% {
+        }
+        100% {
+            height: 0.5rem;
+        }
+    }
+/* close section ecutbildning */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section About-us */
+/* iphone snurrar animation */
+.iphone-snurrar {
+    position: relative;
+    width: 22rem;
+    height: 28rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+#iphone-snurrar-img1{
+position: absolute;
+height: 18rem;
+}
+#iphone-snurrar-img2{
+position: absolute;
+height: 20rem;
+}
+.animate {
+    animation:iphone-bg-rotate 10s linear infinite;
+
+}
+@keyframes iphone-bg-rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+#about-us {
+    margin-top: 2rem;
+    height: 60rem;
+}
+#parent-about-us {
+    flex-direction: column;
+}
+#child-about-us{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.about-us {
+    font-size: 0.7rem;
+    height: 1.8rem;
+    width: 5rem;
+    background-color: gainsboro;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    color: #FFBB00;
+    background-color: rgba(255, 187, 0, 0.11);
+}
+
+#about-us h2 {
+    margin-top: 0.8rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.download-text {
+   color:#8A8A8A; 
+   font-size: 0.8rem;
+}
+
+.Google-play, .App-store {
+    padding: 0.5rem 2rem;
+    background-color: #F8F8F8;
+    border-radius: 0.6rem;
+}
+.Google-play img, .App-store img {
+    height: 30px;
+    align-self: center;
+} 
+.Google-play:hover, .App-store:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.App-store {
+    margin-left: 10px;
+}
+
+.Google-play p, .App-store p {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.about-us-text-size {
+    font-size: 0.6rem;
+    color: #333333;
+}
+.about-us-text-color {
+    color: #333333; 
+    font-weight: 600; 
+    font-size: 0.9rem;
+}
+
+
+/* slut Section About-us */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section Features */
+#features {
+    height: 100vh;
+    background-color: #f5f5f53a;
+    position: relative;
+}
+#dotted-grid {
+    position: absolute;
+    display: none;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#parent-features {
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+}
+.features {
+    font-size: 0.7rem;
+    height: 1.8rem;
+    width: 5rem;
+    background-color: gainsboro;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    color: #FFBB00;
+    background-color: rgba(255, 187, 0, 0.11);
+    margin-bottom: 1rem;
+}
+#features p {
+    color: #8A8A8A;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.7rem;
+}
+#features h5 {
+    color: #333333;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+#features .cards {
+    margin: 1rem;
+    border-radius: 0.6rem;
+}
+#features .cards img {
+    margin: 1rem;
+} 
+#Mobile-rings-2 {
+    display: none;
+}
+/* slut section Features */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Application Screens */
+#application-screens {
+    height: 50vh;
+    width: 100%;
+}
+.application-screens {
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#application-screens h2 {
+    color: #333333;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+#application-screens p { 
+    color: #8A8A8A;
+    font-size: 0.9rem;
+}
+/* karusell 5 telefoner */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+
+/* Center slide text vertically */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.swiper-slide {
+    opacity: 40% !important;
+    transition: 1s;
+}
+
+
+.swiper-slide img {
+    height: 10rem;
+}
+
+.swiper-slide-active {
+    transform: scale(1.1);
+    opacity: 100% !important;
+}
+
+.swiper-slide-next, .swiper-slide-prev{
+    opacity: 70% !important;
+}
+
+/* slut karusell 5 telefoner */
+/* slut Application Screens */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Application Statistics */
+#Application-Statistics {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/dotted_map.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.Application-Statistics {
+    text-align: center;
+}
+.Application-header p {
+    padding: 0;
+    margin: 0;
+    color: #8A8A8A;
+}
+.Statistics-cards {
+    margin-top: 2rem;
+}
+.statistics-text {
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+    color: #333333;
+}
+.Statistics-blue {
+    color: #3096FE;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+/* Slut Application Statistics */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* download  */
+#download {
+    height: 22rem;
+    background-image: url(../images/Bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#download h2 {
+    color: #ffffff;
+    font-weight: 600;
+}
+#download .download-text {
+    color: #ffffff;
+    font-size: 0.7rem;
+}
+.download-img {
+    display: none;
+}
+/* slut download  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact-us */
+#contact-us {
+    height: 34rem;
+    display: flex;
+}
+.contact-us-text {
+    text-align: center;
+}
+.contact-us-text h2 {
+    color: #333333;
+}
+.contact-us-text p {
+    color: #8A8A8A;
+}
+#contact-us input {
+    background-color: #FBFBFB;
+    border: 1px solid transparent;
+    border-radius: 0.6rem;
+}
+#username, #email {
+    padding: 1rem 1rem;
+}
+#message {
+    padding: 1rem 1rem;
+    padding-bottom: 5rem;
+    width: 100%;
+}
+#username-email {
+    margin-top: 1rem;
+    flex-direction: column;
+}
+#contact-us button {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    background-color: #3096FE;
+    padding: 0.3rem 3rem;
+    border-radius: 0.6rem;
+    border: 1px solid transparent;
+    color: #ffffff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.6rem;
+}
+#contact-us button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* slut Contact-us */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer  */
+footer {
+    height: 13rem;
+    width: 100%;
+    background-image: url(../images/Bg_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 13rem;
+    justify-content: center;
+}
+#fotter-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+ footer a { 
+     color: #ffffff;
+     font-weight: 500;
+     font-size: 0.9rem;
+ }
+ .icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: rgba(255, 255, 255, 0.28);
+    border-radius: 12px;
+    border: 4px solid transparent;
+    transition: 0.5s ease-out;
+    margin: 0.5rem 0.4rem;
+}
+
+.icon-box:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* slut footer  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    /* header */
+    header {
+        padding-top: 3.4rem;
+        height: 60rem;
+        background-image: url(../images/bg_blue_tablet.png);
+    }
+    header .text {
+        width: 50%;
+        height: 41rem;
+    }
+    .karusell {
+        display: flex;
+    }
+    #header {
+        flex-direction: row;
+        margin-top: 7rem;
+    }
+    .karusell img {
+        height: 400px;
+    }
+    /* slut header */
+
+
+
+
+
+
+
+    /* ecutbildning  */
+    #ecutbildning  img{
+        height: 1rem;
+    }
+
+        /* ec animation */    
+        @keyframes ecshrinkgandgrow {
+            0% {
+                height: 1rem;
+            }
+        
+            50% {   
+                height: 1.5rem;
+            }
+            75% {
+            }
+        
+            100% {
+                height: 1rem;
+        
+            }
+        
+        }
+    
+    /* slut ecutbildning  */
+
+
+
+
+
+
+    /* about us */
+    #about-us {
+        height: 32rem;
+        margin-top: 5rem;
+    }
+    #parent-about-us {
+        flex-direction: row;
+    }
+    #child-about-us {
+        max-width: 20rem;
+    }
+
+    /* slut about us */
+
+
+
+
+
+
+
+
+    /* features */
+    #features {
+        height: 50vh;
+    }
+
+    .features {
+        font-size: 0.7rem;
+        height: 1.8rem;
+        width: 5rem;
+        background-color: gainsboro;
+        line-height: 2rem;
+        text-align: center;
+        border-radius: 0.6rem;
+        font-weight: 600;
+        color: #FFBB00;
+        background-color: rgba(255, 187, 0, 0.11);
+        margin-bottom: 1rem;
+    }
+    
+    
+    #features .cards {
+        margin: 1rem;
+        border-radius: 0.6rem;
+    }
+    #features .cards img {
+        margin: 1rem;
+    } 
+    
+    #features-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    /*slut features */
+
+
+
+/* application-screens */
+
+#application-screens {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+}
+
+#application-screens p {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide img {
+    height: 17rem;
+}
+
+
+
+
+
+
+/* slut application-screens */
+
+
+
+
+
+
+
+    /* Application Statistics */
+    .statistics-text {
+        font-size: 1.2rem;
+    }
+    .Statistics-blue {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    #download-play {
+        justify-content: center;
+    }
+    /* Slut Application Statistics */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px)  {
+    #mobile-menu a {
+        font-size: 1.7rem;
+    }
+
+
+    .containerown {
+        max-width: 1200px;
+    }
+
+    /* mobile menu */
+    #mobile-menu #side-menu-knapp {
+        display: none;
+    }
+    /* slut mobile menu */
+
+    /* menu desktop */
+    #menu-desktop {
+        display: block;
+    }
+    .menu-desktop {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-desktop a {
+        color: #ffffff;
+    }
+
+    #mobile-menu {
+        display: none;
+        position: relative;
+    }
+    /* slut menu desktop */
+
+
+    /* header */
+    header {
+        margin-top: -3.5rem;
+        background-image: url(../images/background-header.png);
+    }
+    
+    .header-logo {
+        display: block;
+    }
+    .header ul {
+        display: block;
+    }
+    
+    .logga-menu {
+        height: 3.5rem;
+        position: absolute;
+        top: 30px;
+    }
+
+    #menu-desktop-knapp {
+        padding: 10px 30px;
+        border-radius: 0.6rem;
+        background-color: #FFBB00;
+        color: #ffffff;
+        border: 1px solid transparent;
+        font-size: 1.5rem;
+    }
+    #menu-desktop-knapp:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #header {
+        flex-direction: row;
+    }
+
+    #header {
+        height: 80vh;
+        width: 100%;
+    }
+    header .text {
+        max-width: 40rem;
+    }
+    header h1 {
+        text-align: left;
+        font-size: 54px;
+    }
+    header .text p {
+        color: #ffffff;
+        text-align: left;
+        margin-top: 0.5rem;
+    } 
+    
+    header .text button {
+        background-color: transparent;
+        padding: 0.6rem 2rem;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 0.6rem;
+    }
+    header .text .justify-content {
+        justify-content: start;
+    }
+    header .img-text {
+        padding-top: 0.6rem;
+        padding-left: 0.2rem;
+    }
+    header .karusell img {
+        height: 48rem;
+    }
+    /* slut header */
+
+
+
+
+
+
+
+
+
+    /* ecutbildning  */
+    .ecutbildning {
+        justify-content: space-between;
+    }
+    #ecutbildning  img{
+        height: 1.7rem;
+    }
+
+    /* ec animation */
+    @keyframes ecshrinkgandgrow {
+        0% {
+            height: 1.7rem;
+        }
+        50% {   
+            height: 2rem;
+        }
+        100% {
+            height: 1.7rem;
+        }
+    }
+
+    /* slut ecutbildning  */
+    
+
+
+
+
+
+
+
+
+
+    /* about-us */
+    #about-us {
+        height: 80vh;
+    }
+
+    #parent-about-us {
+        height: inherit;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #child-about-us {
+        height: 32rem;
+        max-width: 35rem;
+        gap: 1rem;
+    }
+    #child-about-us h2 { 
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+    }
+    .iphone-snurrar {
+        width: 36rem;
+        height: 38rem;        
+    }    
+    #iphone-snurrar-img1{
+    height: 34rem;
+    }
+    #iphone-snurrar-img2{
+    height: 36rem;
+    }
+    /* slut about-us */
+
+
+
+
+
+
+
+
+
+
+    /* features  */
+    #features {
+        height: 45rem;
+    }
+    #dotted-grid {
+        display: block;
+    }
+    
+    #parent-features {
+        flex-direction: row;
+        align-items: center;
+    }
+    #features h2 {
+        font-weight: 600;
+        font-size: 2.9rem;
+    }
+    #features .cards p {
+        font-size: 0.7rem;
+    }
+    #features-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #Mobile-rings-2 {
+        display: flex;
+    }
+    /*slut features  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* application-screens */
+    #application-screens {
+        height: 95vh;
+
+    }
+    .application-screens h2 {
+        font-size: 34px !important;
+        font-weight: 600;
+    }
+    .application-screens p {
+        color: #8A8A8A;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .swiper-slide img {
+        height: 30rem;
+    }
+    /* slut application-screens */
+
+
+
+
+
+
+
+    /* Application Statistics */
+    #Application-Statistics {
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Application-header h2 {
+        font-size: 3rem;
+    }
+
+    .Application-header p {
+        color: #8A8A8A;
+        font-size: 1.2rem;
+        max-width: 40rem;
+        margin: auto;
+    }
+
+    .Statistics-cards {
+        margin-top: 2rem;
+    }
+    .Statistics-blue {
+        color: #3096FE;
+        font-size: 2.2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .statistics-text {
+        font-size: 1.3rem;
+        padding: 0;
+        margin: 0;
+        color: #333333;
+    }
+    /* Slut Application Statistics */
+
+
+
+
+
+
+
+
+    /* download */
+    #download {
+        height: 35rem;
+        text-align: left;
+        justify-content: start;
+        overflow: hidden;
+    } 
+    .download-rubrik-text {
+        width: 30rem;
+        position: relative;
+        z-index: 1;
+    }
+    #download-play {
+        justify-content: left;
+    }
+    .download-img {
+        display: flex;
+        position: relative;
+        width: 34rem;
+        height: 35rem;    
+    }
+    #download-img-left {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        left: -3000px;
+    }
+    #download-img-right {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        right: -3000px;
+    }
+    #download-img-middle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    @keyframes slideleft {
+        0% {
+            left: -3000px;
+            transform: rotate(0deg);
+        }
+        100% {
+            left: -300px;
+            transform: rotate(360deg);
+        }
+    }
+
+    #download-img-left.slideleft {
+        animation: slideleft 2.5s linear 2s forwards;
+    }
+
+    #download-img-right.slideright {
+        animation: slideright 2.5s linear 2s forwards;
+    }
+    @keyframes slideright {
+        0% {
+            right: -3000px;
+            transform: rotate(-0deg);
+        }
+        100% {
+            right: -300px;
+            transform: rotate(-360deg);
+        }
+    }
+    /* slut download */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Contact-us */
+    .contact-us-text {
+        max-width: 35rem;
+        margin: auto;
+    }
+
+    .contact-us-text h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+
+    #username-email {
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    #username, #email {
+        padding: 1rem 1rem;
+    }
+    #message {
+        padding: 1rem 1rem;
+        padding-bottom: 5rem;
+        width: 100%;
+    }
+    #contact-us button {
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    #username, #email {
+        width: 50%;
+    }
+
+    /* slut Contact-us */
+
+    footer {
+        height: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
